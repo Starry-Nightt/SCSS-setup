@@ -1,0 +1,21 @@
+@import './design/color';
+@import './design/font';
+@import './theme/button';
+@import './theme/form-field';
+@import './theme/typography';
+@import './theme/image';
+@import './utilities/global';
+@import './utilities/spacing';
+@import './utilities/mixins';
+@import './utilities/mobile';
+@import './utilities/tablet';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    @include custom-font;
+}

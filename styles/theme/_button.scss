@@ -1,0 +1,28 @@
+@import '../design/color';
+@import '../utilities/mixins';
+
+%btn {
+    display: inline-block;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    margin: 0.3rem;
+    transition: 0.25s ease-out;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(0.98);
+    }
+}
+
+.btn_primary {
+    @extend %btn;
+    @include set_background($primary-color);
+}
+
+.btn_secondary {
+    @extend %btn;
+    @include set_background($secondary-color);
+}
